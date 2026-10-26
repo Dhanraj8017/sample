@@ -43,7 +43,7 @@ export default function Story() {
           <Reveal>
             <div className="relative overflow-hidden rounded-t-[999px] rounded-b-[2.5rem] shadow-[0_40px_70px_-30px_rgba(54,38,27,0.5)]">
               <motion.img
-                src="/images/story-interior.jpg"
+                src={`${import.meta.env.BASE_URL}images/story-interior.jpg`}
                 alt="Warm café interior with pink chairs"
                 style={{ y: imgY }}
                 className="h-[30rem] w-full scale-[1.22] object-cover sm:h-[36rem]"
