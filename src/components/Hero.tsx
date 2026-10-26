@@ -157,7 +157,7 @@ export default function Hero({ ready }: { ready: boolean }) {
             {/* cup image */}
             <div className="absolute inset-0 overflow-hidden rounded-full shadow-[0_40px_80px_-20px_rgba(54,38,27,0.45)] ring-8 ring-cream">
               <motion.img
-                src="/images/hero-latte.jpg"
+                src={`${import.meta.env.BASE_URL}images/hero-latte.jpg`}
                 alt="Rose latte with rosetta art"
                 className="h-full w-full object-cover"
                 initial={{ scale: 1.25 }}
