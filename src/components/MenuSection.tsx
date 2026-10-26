@@ -12,13 +12,16 @@ type Drink = {
 };
 
 const DRINKS: Drink[] = [
-  { name: "Rose Water Latte", notes: "blush espresso · steamed rose milk · petals", price: "5.5", img: "/images/menu-roselatte.jpg", tag: "House icon" },
-  { name: "Honey Cardamom Flat White", notes: "wildflower honey · cardamom dust · double ristretto", price: "5.0", img: "/images/menu-espresso.jpg" },
-  { name: "Cocoa Cortado", notes: "single-origin shot · dark cocoa · silk cream", price: "4.5", img: "/images/menu-cocoa.jpg" },
-  { name: "Bloom Pour Over", notes: "ethiopia guji · bergamot & apricot", price: "6.0", img: "/images/pour.jpg", tag: "Slow bar" },
-  { name: "Toasted Almond Cappuccino", notes: "almond foam · amaretto sugar · cocoa rim", price: "5.0", img: "/images/hero-latte.jpg" },
-  { name: "Vanilla Bean Cold Brew", notes: "18-hour steep · vanilla cloud · cream top", price: "5.5", img: "/images/barista.jpg" },
-  { name: "Pistachio Croissant", notes: "baked at sunrise · pistachio cream · honey glaze", price: "4.0", img: "/images/menu-pastry.jpg", tag: "Bakery" },
+  const IMG = `${import.meta.env.BASE_URL}images/`;
+
+const DRINKS: Drink[] = [
+  { name: "Rose Water Latte", notes: "blush espresso · steamed rose milk · petals", price: "5.5", img: IMG + "menu-roselatte.jpg", tag: "House icon" },
+  { name: "Honey Cardamom Flat White", notes: "wildflower honey · cardamom dust · double ristretto", price: "5.0", img: IMG + "menu-espresso.jpg" },
+  { name: "Cocoa Cortado", notes: "single-origin shot · dark cocoa · silk cream", price: "4.5", img: IMG + "menu-cocoa.jpg" },
+  { name: "Bloom Pour Over", notes: "ethiopia guji · bergamot & apricot", price: "6.0", img: IMG + "pour.jpg", tag: "Slow bar" },
+  { name: "Toasted Almond Cappuccino", notes: "almond foam · amaretto sugar · cocoa rim", price: "5.0", img: IMG + "hero-latte.jpg" },
+  { name: "Vanilla Bean Cold Brew", notes: "18-hour steep · vanilla cloud · cream top", price: "5.5", img: IMG + "barista.jpg" },
+  { name: "Pistachio Croissant", notes: "baked at sunrise · pistachio cream · honey glaze", price: "4.0", img: IMG + "menu-pastry.jpg", tag: "Bakery" },
 ];
 
 export default function MenuSection() {
