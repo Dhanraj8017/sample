@@ -11,8 +11,7 @@ type Drink = {
   tag?: string;
 };
 
-const DRINKS: Drink[] = [
-  const IMG = `${import.meta.env.BASE_URL}images/`;
+const IMG = `${import.meta.env.BASE_URL}images/`;
 
 const DRINKS: Drink[] = [
   { name: "Rose Water Latte", notes: "blush espresso · steamed rose milk · petals", price: "5.5", img: IMG + "menu-roselatte.jpg", tag: "House icon" },
