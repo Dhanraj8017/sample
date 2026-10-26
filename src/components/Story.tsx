@@ -57,7 +57,7 @@ export default function Story() {
             style={{ y: cardY }}
             className="absolute -bottom-10 -right-3 z-10 w-40 rotate-6 rounded-2xl border-8 border-cream bg-cream shadow-2xl sm:-right-10 sm:w-52"
           >
-            <img src="/images/barista.jpg" alt="Barista pouring latte art" className="aspect-square w-full rounded-lg object-cover" />
+            <img src={`${import.meta.env.BASE_URL}images/barista.jpg`} alt="Barista pouring latte art" className="aspect-square w-full rounded-lg object-cover" />
             <p className="py-2.5 text-center font-display text-xs italic text-cocoa/70 sm:text-sm">
               morning ritual, 7:04 am
             </p>
