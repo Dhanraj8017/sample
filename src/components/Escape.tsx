@@ -12,7 +12,7 @@ export default function Escape() {
   return (
     <section ref={ref} className="relative h-[72vh] min-h-[30rem] overflow-hidden">
       <motion.img
-        src="/images/pour.jpg"
+       src={`${import.meta.env.BASE_URL}images/pour.jpg`} 
         alt="Slow pour over brewing"
         style={{ y, scale }}
         className="absolute inset-0 h-full w-full object-cover"
